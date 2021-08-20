@@ -5,7 +5,7 @@ DIR_OBJ = ./obj
 OBJ_C = $(wildcard ${DIR_SRC}/*.cpp)
 OBJ_O = $(patsubst %.cpp,${DIR_OBJ}/%.o,$(notdir ${OBJ_C}))
 
-TARGET = mpu6050
+TARGET = bin/mpu6050
 #BIN_TARGET = ${DIR_OBJ}/${TARGET}
 
 CC = g++
